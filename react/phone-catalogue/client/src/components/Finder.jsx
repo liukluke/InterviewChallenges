@@ -10,7 +10,7 @@ const store = createStore((state = initialState, action = {}) => {
       return {
         ...state,
         phones: action.payload
-      };
+      }
     default:
       return state;
   }

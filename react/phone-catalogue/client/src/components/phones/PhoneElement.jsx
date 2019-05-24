@@ -6,11 +6,12 @@ export default class PhoneElement extends Component {
             <React.Fragment>
                 <li>
                     <div>
-                        <img src={this.props.phone.imageFileName} alt="phone" />
+                        <img src={this.props.imageFileName} alt="phone" />
                     </div>
-                    <h2>{this.props.phone.name}</h2>
+                    <h2>{this.props.name}</h2>
                 </li>
             </React.Fragment>
         )
     }
 }
+
