@@ -17,8 +17,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <Switch>
-          <Route exact path='/' component={Phones} />
-          <Route exact path='/:id' component={PhoneInfo} />
+            <Route exact path='/' component={Phones} />
+            <Route exact path='/:id' component={PhoneInfo} />
         </Switch>
       </React.Fragment>
     );
