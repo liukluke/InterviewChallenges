@@ -1,0 +1,214 @@
+.phone-list {
+  margin: 2vh 5vw;
+}
+
+.phone-list ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  grid-gap: 2vh;
+}
+
+@media (min-width: 992px) {
+  .phone-list li {
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  }
+  .phone-list li:hover {
+    -webkit-box-shadow: 0px 7px 11px -1px rgba(128, 128, 128, 0.5);
+            box-shadow: 0px 7px 11px -1px rgba(128, 128, 128, 0.5);
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  }
+}
+
+.phone-list .phone-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  height: 47vh;
+  border: 1px solid;
+  border-color: #cdcdcd;
+  border-radius: 15px;
+}
+
+@media (min-width: 992px) {
+  .phone-list .phone-card {
+    border: 0px;
+  }
+}
+
+.phone-list .card-img-box {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone-list .card-img-box img {
+  height: 30vh;
+}
+
+.phone-list h2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+}
+
+.phone-info {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) {
+  .phone-info {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.phone-info .phone-info-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+@media (min-width: 992px) {
+  .phone-info .phone-info-img {
+    height: 75vh;
+  }
+}
+
+.phone-info .phone-info-img img {
+  height: 90%;
+}
+
+.phone-info .phone-info-table {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  padding: 0 8vw;
+  height: 50vh;
+  line-height: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .phone-info .phone-info-table {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 0 10vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .phone-info .phone-info-table {
+    font-size: 2rem;
+    height: 80vh;
+    padding: 0;
+    padding-right: 5vw;
+  }
+}
+
+.phone-info .phone-info-table td span {
+  font-weight: 700;
+}
+
+.phone-info .phone-info-table tr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
+  grid-gap: 2vw;
+  padding: 0.35vh 0;
+}
+
+@media (min-width: 992px) {
+  .phone-info .phone-info-table tr {
+    padding: 1.2vh 0;
+  }
+}
+
+.loading-page {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading-page .loader {
+  border: 16px solid #3498db;
+  border-top: 16px solid #b6daf2;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: loader-spin infinite 2s linear infinite;
+          animation: loader-spin infinite 2s linear infinite;
+}
+
+@-webkit-keyframes loader-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Phone.css.map */
